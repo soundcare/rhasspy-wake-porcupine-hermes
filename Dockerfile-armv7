@@ -10,7 +10,7 @@ WORKDIR /
 
 COPY rhasspywake_porcupine_hermes/ /rhasspywake_porcupine_hermes
 COPY . /
-RUN apt-get update && apt-get install -y build-essential \
+RUN apt-get update && apt-get install -y build-essential zlib1g-dev \
     python3-dev \
     cython3 \
     portaudio19-dev \
