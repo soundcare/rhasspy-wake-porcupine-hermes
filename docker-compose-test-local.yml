@@ -1,8 +1,8 @@
 version: "3.4"
 services:
     keyword:
-        command: --keyword /downloads/snowboy.ppn --sensitivity
-            0.8 --debug --host mqtt 
+        command: --keyword /downloads/call_an_ambulance_linux_12_28_2020_v1.8.0.ppn --sensitivity
+            1.0 --debug --host mqtt 
             --port 12183 --site-id soundcare
         image: "porcupine:latest"
         tty: true
