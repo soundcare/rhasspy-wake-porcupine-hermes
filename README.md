@@ -1,3 +1,6 @@
+![Build x64 Docker Images](https://github.com/soundcare/rhasspy-wake-porcupine-hermes/workflows/Build%20x64%20Docker%20Images/badge.svg)
+![Docker Build/Publish Porcupine Armv7 Image](https://github.com/soundcare/rhasspy-wake-porcupine-hermes/workflows/Docker%20Build/Publish%20Porcupine%20Armv7%20Image/badge.svg)
+
 # Rhasspy Wake Porcupine Hermes
 
 [![Continous Integration](https://github.com/rhasspy/rhasspy-wake-porcupine-hermes/workflows/Tests/badge.svg)](https://github.com/rhasspy/rhasspy-wake-porcupine-hermes/actions)
