@@ -1,13 +1,13 @@
 version: "3.4"
 services:
     keyword:
-        command: --keyword /porcupine/keywords/snowboy.ppn --sensitivity
-            0.8 --keyword-dir /profiles/en/porcupine --debug --host mqtt 
+        command: --keyword /downloads/snowboy.ppn --sensitivity
+            0.8 --debug --host mqtt 
             --port 12183 --site-id soundcare
         image: "porcupine:latest"
         tty: true
         volumes:
-            - /profiles:/profiles
+            - ./downloads:/downloads
         depends_on:
             - mqtt
     mqtt:
