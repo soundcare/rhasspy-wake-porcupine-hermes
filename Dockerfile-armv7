@@ -1,5 +1,5 @@
-FROM python:3.7-slim-buster
-ARG PORCUPINE_LIB=linux/x86_64
+FROM arm32v7/python:3.7-slim-buster
+ARG PORCUPINE_LIB=linux/raspberri-pi/cortex-a7
 ARG PORCUPINE_KW=linux/snowboy.ppn
 
 COPY rhasspywake_porcupine_hermes/porcupine/lib/common/porcupine_params.pv /porcupine/

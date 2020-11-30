@@ -11,18 +11,12 @@ src_dir="$(realpath "${this_dir}/..")"
 
 # -----------------------------------------------------------------------------
 
-venv="${src_dir}/.venv"
-download="${src_dir}/download"
+download="${src_dir}download"
 
 # -----------------------------------------------------------------------------
 
 : "${PYTHON=python3}"
 
-# Create virtual environment
-echo "Creating virtual environment at ${venv}"
-rm -rf "${venv}"
-"${PYTHON}" -m venv "${venv}"
-source "${venv}/bin/activate"
 
 # Install Python dependencies
 echo "Installing Python dependencies"
