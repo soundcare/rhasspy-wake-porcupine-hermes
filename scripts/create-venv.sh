@@ -29,9 +29,6 @@ grep '^rhasspy-' "${src_dir}/requirements.txt" | \
 
 pip3 ${PIP_INSTALL} -r requirements.txt
 
-# Optional development requirements
-pip3 ${PIP_INSTALL} -r requirements_dev.txt || \
-    echo "Failed to install development requirements"
 
 # -----------------------------------------------------------------------------
 

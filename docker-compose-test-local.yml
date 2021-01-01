@@ -1,10 +1,10 @@
 version: "3.4"
 services:
     keyword:
-        command: --keyword /downloads/call_an_ambulance_linux_12_28_2020_v1.8.0.ppn --sensitivity
+        command: --keyword /downloads/get_help_linux_2021-01-30-utc_v1_9_0.ppn --sensitivity
             1.0 --debug --host mqtt 
             --port 12183 --site-id soundcare
-        image: "porcupine:latest"
+        image: "rhasspy-porcupine-local:latest"
         tty: true
         volumes:
             - ./downloads:/downloads
