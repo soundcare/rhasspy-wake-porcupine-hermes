@@ -15,6 +15,6 @@ RUN apt-get update && apt-get install -y build-essential zlib1g-dev \
 RUN ./configure
 RUN make
 RUN make install
-COPY ./pvporcupine_overrides/utils.py /usr/local/lib/python3.7/site-packages/pvporcupine/utils.py
+COPY ./pvporcupine_overrides/util.py /usr/local/lib/python3.7/site-packages/pvporcupine/util.py
 
 ENTRYPOINT ["python3", "-m", "rhasspywake_porcupine_hermes"]

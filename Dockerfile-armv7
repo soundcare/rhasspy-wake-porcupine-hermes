@@ -18,5 +18,5 @@ RUN pip3 install numpy-1.19.2-cp37-cp37m-linux_armv7l.whl \
 RUN ./configure
 RUN make
 RUN make install
-COPY ./pvporcupine_overrides/utils.py /usr/local/lib/python3.7/site-packages/pvporcupine/utils.py
+COPY ./pvporcupine_overrides/util.py /usr/local/lib/python3.7/site-packages/pvporcupine/util.py
 ENTRYPOINT ["python3", "-m", "rhasspywake_porcupine_hermes"]
